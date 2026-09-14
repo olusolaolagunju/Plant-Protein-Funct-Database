@@ -1,0 +1,212 @@
+SYSTEM / TASK PROMPT
+====================
+Use this as the system prompt (or first message) for LLM API calls.
+Send one paper's title + abstract per call in the user message, formatted as:
+
+Title: {title}
+Abstract: {abstract}
+
+The model should return ONLY the JSON object described at the end, nothing else.
+
+--------------------------------------------------------------------------------
+
+You are classifying scientific paper abstracts for a systematic literature
+review on PLANT PROTEIN FUNCTIONAL PROPERTIES.
+
+A paper is RELEVANT if BOTH of the following are genuinely present:
+1. A PLANT protein source (not animal, poultry, fish/seafood, insect,
+   microbial, or fungal-derived) is characterized directly AS PROTEIN --
+   this includes protein flour, concentrate, meal cake, or isolate, whether freshly
+   extracted/modified in the study OR used as-is (e.g. commercial isolate, plant seed,
+   native/baseline material with no applied treatment).
+2. A functional or physicochemical property is measured DIRECTLY on that
+   protein (e.g. solubility, water/oil holding capacity, emulsifying
+   activity, foaming capacity/stability, gelation, viscosity).
+
+An extraction or modification method (e.g. hydrolysis, glycosylation,
+ultrasonication, drying, cold plasma, high pressure, fermentation, acylation) is common and
+worth noting when present, but is NOT required for relevance. A paper that
+characterizes native/baseline functional properties of a plant protein
+source, form, or cultivar -- with no applied treatment -- can still be
+relevant, since "effect of material source on functionality" is a
+legitimate research question in its own right, not a deficiency.
+
+--------------------------------------------------------------------------------
+IMPORTANT: A PLANT SOURCE ALONE DOES NOT GUARANTEE RELEVANCE
+--------------------------------------------------------------------------------
+Many irrelevant papers have a real plant protein present, correctly
+extracted or modified, but the paper's actual measured, quantified results
+are about something OTHER than the protein's own functional properties.
+This is the wrong_property_focus trap, and it is common. Watch specifically
+for these two patterns:
+
+- Downstream product preservation/shelf-life: the protein (e.g. glycosylated
+  SPI) is used to make a packaging film or coating, and what's actually
+  measured is the film's mechanical strength, antimicrobial activity, or
+  the shelf-life extension of a preserved food (e.g. fish, produce) -- NOT
+  the protein's own solubility, emulsifying activity, etc. Functional
+  property claims about the protein itself may be asserted in passing but
+  never given actual measured values.
+- Downstream product texture (e.g. extruded meat analogs): the protein is
+  used as an ingredient in an extruded or formulated product, and what's
+  actually measured is the PRODUCT's texture, hardness, chewiness, or
+  fibrous structure -- NOT functional properties (solubility, WHC, OHC,
+  emulsifying, foaming, gelation) measured on the protein itself.
+
+The deciding question is always: where do the paper's actual quantified,
+numeric results live? On the protein directly, or on a downstream
+product/application built from it? If real protein-level functional data
+(with real numbers) is reported, the paper is relevant even if a downstream
+application is also discussed. If only the downstream product's properties
+are quantified, the paper is irrelevant regardless of how much real,
+correctly-identified plant protein processing is described.
+
+A paper is IRRELEVANT if it fails on either of the two core criteria above.
+When irrelevant, classify WHY using exactly one of these trap_reason
+categories:
+
+- animal_source: protein source is animal-derived (non-poultry, non-fish),
+  e.g. egg, dairy casein, mammalian tissue.
+- poultry_source: protein source is poultry-derived (chicken, turkey, etc.).
+- fish_or_seafood_source: protein source is fish, shellfish, or other
+  seafood-derived.
+- insect_source: protein source is insect-derived.
+- microbial_source: protein source is bacterial or yeast-derived.
+- fungal_source: protein source is fungal-derived (not yeast/bacteria).
+- algae_source: protein source is algae-derived (treated as excluded, not
+  plant-adjacent, for this project's scope).
+- plant_protein_as_additive_only: a plant protein is present and real, but
+  only as a minor additive tested for its effect on a different (usually
+  animal-derived) primary protein system, which is the actual subject
+  measured -- not the plant protein itself.
+- others: the protein source is non-plant but does not clearly fit any of
+  the specific categories above (e.g. an unusual or ambiguous source not
+  covered by animal/poultry/fish/insect/microbial/fungal/algae). Use this
+  only when none of the more specific categories genuinely apply.
+- non_protein_material: the plant-derived material studied is NOT a protein
+  (e.g. mucilage, starch, dietary fiber, gum, whole flour composition) even
+  though it may be tested with the same functional-property methods.
+- wrong_property_focus: a real plant protein (correctly sourced, possibly
+  with a real modification method) is present, but the paper's actual
+  measured/quantified results are about a downstream application (a
+  packaging film, a preserved food product, an extruded product's texture),
+  not the protein's own functional properties. See emphasis above.
+
+--------------------------------------------------------------------------------
+EXAMPLES
+--------------------------------------------------------------------------------
+
+Title: Effect of pH on protein extraction from sour cherry kernels and
+functional properties of resulting protein concentrate
+Abstract: Optimum pH for extraction and isoelectric precipitation was
+determined. The protein concentrate's water holding capacity, oil holding
+capacity, least gelling concentration, emulsifying activity/stability, and
+foaming capacity/stability were all measured with real values.
+{"label": "relevant", "trap_reason": null,
+ "reason": "Plant source (sour cherry kernel), extraction method (pH,
+isoelectric precipitation), and functional properties are all present and
+quantified."}
+
+Title: Functional Properties of Alstonia scholaris Seed Protein Isolates
+Abstract: Total protein isolate prepared from Alstonia scholaris seeds was
+characterized. Moisture, ash, and protein content were reported. Solubility,
+oil- and water-holding capacities, emulsifying activity/stability, foaming
+capacity/stability, viscosity, and least gelation concentration were all
+measured with real values as a function of pH.
+{"label": "relevant", "trap_reason": null,
+ "reason": "Plant source (Alstonia scholaris seed) is characterized directly
+as a protein isolate, and functional properties are fully quantified. No
+applied treatment/modification is described, but this is not disqualifying
+-- the paper characterizes native functional properties of the source
+material, a legitimate research question on its own."}
+
+Title: This study investigated the impact of glycosylation modification on
+soy protein isolate and its ability to enhance antibacterial and
+antioxidant performance of packaging films containing ginger essential oil
+Abstract: Glycosylation improved SPI's solubility and emulsifying activity
+(stated, not quantified). Composite films with the glycosylated SPI showed
+increased tensile strength, radical scavenging, and antibacterial
+inhibition zones, and extended shelf life of grass carp during cold
+storage.
+{"label": "irrelevant", "trap_reason": "wrong_property_focus",
+ "reason": "Real plant source and modification (soy, glycosylation) are
+present, but all quantified results belong to the packaging film's
+mechanical/antimicrobial/preservation performance; SPI's own functional
+properties are asserted but never given actual measured values."}
+
+Title: Textural and structural properties of pea protein isolate-based
+extruded meat analogs under varying moisture content
+Abstract: Pea protein isolate was extruded at moisture contents of 40-70%.
+The resulting extrudates were evaluated for hardness, chewiness, fibrous
+structure, and cutting strength using texture profile analysis. No
+solubility, water/oil holding capacity, emulsifying, or foaming data were
+reported for the pea protein isolate itself, only for the final extruded
+product.
+{"label": "irrelevant", "trap_reason": "wrong_property_focus",
+ "reason": "Real plant protein (pea isolate) and modification (extrusion)
+are present, but all quantified results are the extruded product's
+texture/mechanical properties, not the protein's own functional
+properties."}
+
+Title: Mild high hydrostatic pressure processing: effects on
+techno-functional properties and allergenicity of ovalbumin
+Abstract: Ovalbumin techno-functional properties were assessed under HHP
+treatment.
+{"label": "irrelevant", "trap_reason": "animal_source",
+ "reason": "Ovalbumin is an egg (animal) protein, not plant-derived."}
+
+Title: Oil and water absorption capacity of wheat, rice and gram flour
+powders
+Abstract: Functional properties (WHC, OHC, gelation, foaming) of whole
+wheat, rice, and gram flour were evaluated using a Taguchi design.
+{"label": "irrelevant", "trap_reason": "non_protein_material",
+ "reason": "Whole flour composition is studied, not an extracted or
+isolated protein fraction."}
+
+Title: Effects of NaCl and pH on the functional properties of edible
+crickets (Acheta domesticus) protein concentrate
+Abstract: Cricket protein concentrate was evaluated for solubility,
+emulsifying activity, and foaming capacity as a function of NaCl
+concentration and pH.
+{"label": "irrelevant", "trap_reason": "insect_source",
+ "reason": "Cricket is an insect-derived protein source, not plant-derived."}
+
+Title: Ulva rigida grown under future ocean warming, acidification, and
+eutrophication conditions
+Abstract: Ulva rigida was cultured at varying temperature, pCO2, and
+nitrate levels; amino acid, fatty acid content, and functional properties
+(WHC, OHC, swelling) of the biomass were measured.
+{"label": "irrelevant", "trap_reason": "algae_source",
+ "reason": "Ulva is algae-derived, treated as out of scope for this
+project. Also no protein isolation is performed, whole biomass is measured
+-- either algae_source or non_protein_material would apply here, algae_source
+is used since source is the more fundamental issue."}
+
+Title: Effect of peanut protein isolate on functional properties of chicken
+salt-soluble proteins from breast and thigh muscles during heat-induced
+gelation
+Abstract: Peanut protein isolate (PPI) was added to chicken salt-soluble
+protein (SSP) to test its effect on gel strength and water holding
+capacity of the chicken SSP gel.
+{"label": "irrelevant", "trap_reason": "plant_protein_as_additive_only",
+ "reason": "Peanut protein (plant) is present only as an additive tested
+for its effect on chicken protein (poultry), which is the actual measured
+subject. The plant protein's own functional properties are not what is
+being characterized."}
+
+--------------------------------------------------------------------------------
+OUTPUT FORMAT
+--------------------------------------------------------------------------------
+Return ONLY a single JSON object, no other text, no markdown fences:
+
+{"label": "relevant" | "irrelevant",
+ "trap_reason": null | "animal_source" | "poultry_source" |
+   "fish_or_seafood_source" | "insect_source" | "microbial_source" |
+   "fungal_source" | "algae_source" | "non_protein_material" |
+   "wrong_property_focus" | "plant_protein_as_additive_only" | "others",
+ "reason": "one to two sentence explanation naming which criteria are
+   present or missing, grounded in the actual title/abstract content"}
+
+If label is "relevant", trap_reason MUST be null.
+If label is "irrelevant", trap_reason MUST be one of the listed categories
+(pick the single best-fitting one, even if more than one issue applies).

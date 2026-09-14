@@ -1,0 +1,135 @@
+name,occurrence_count,type_conflict,near_tie,type_conflict_detail,resolution_source,llm_resolved,llm_confidence,llm_rationale
+HP-20 resin washing,13,True,False,extraction_method=11; modification_method=1; material_used_directly=1,llm,True,high,"HP-20 resin washing is consistently described as a treatment to isolate or purify components, aligning with extraction methods."
+Mung bean protein isolate extraction,7,False,False,,,False,,
+NaCl extraction,2,True,True,extraction_method=1; material_used_directly=1,llm,True,high,The entity 'NaCl extraction' refers to a method used to isolate proteins from raw biomass.
+Osborne extraction method,2,False,False,,,False,,
+SP-207 resin washing,10,True,False,extraction_method=8; material_used_directly=2,llm,True,high,"SP-207 resin washing is consistently described as a process for reducing VOCs, aligning with extraction methods."
+XAD-16N resin washing,14,True,False,extraction_method=12; modification_method=1; material_used_directly=1,llm,True,high,"XAD-16N resin washing is consistently described as a process for reducing VOCs, aligning with extraction method."
+acetic acid extraction,1,False,False,,,False,,
+acetic acid or citric acid precipitation,4,False,False,,,False,,
+acetic acid precipitation,21,True,True,extraction_method=12; material_used_directly=9,llm,True,high,"Acetic acid precipitation is consistently described as a method to isolate proteins, aligning with 'extraction_method.'"
+acid extraction,26,True,False,extraction_method=22; material_used_directly=4,llm,True,high,"The entity 'acid extraction' is consistently described as a method used to isolate proteins from raw biomass, aligning with the definition of 'extraction_method.'"
+acid extraction and ultrafiltration,1,False,False,,,False,,
+acid precipitation,27,False,False,,,False,,
+acid/alkaline extraction,9,False,False,,,False,,
+acidic protein isolation,3,False,False,,,False,,
+adsorbent resin washing,19,False,False,,,False,,
+adsorption and dialysis,2,False,False,,,False,,
+alcohol leaching,2,False,False,,,False,,
+alcohol precipitation,5,False,False,,,False,,
+alkali extraction,20,True,False,extraction_method=19; material_used_directly=1,llm,True,high,The entity 'alkali extraction' is consistently described as a method to obtain protein isolates.
+alkaline and salt extraction,11,False,False,,,False,,
+alkaline extraction,82,True,False,extraction_method=74; material_used_directly=8,llm,True,high,The entity 'alkaline extraction' is consistently described as a method for obtaining protein from raw biomass.
+alkaline extraction and acid precipitation,11,False,False,,,False,,
+alkaline extraction with isoelectric precipitation,29,True,False,extraction_method=28; material_used_directly=1,llm,True,high,The entity describes a process used to isolate proteins from raw materials.
+alkaline extraction with ultrasound treatment,18,False,False,,,False,,
+alkaline hydrogen peroxide extraction,33,True,False,extraction_method=30; material_used_directly=3,llm,True,high,The entity 'alkaline hydrogen peroxide extraction' is consistently described as a method used to obtain or isolate proteins from raw biomass.
+alkaline hydrogen peroxide extraction with ultrasound treatment,33,True,False,extraction_method=32; material_used_directly=1,llm,True,high,The entity describes a process used to isolate proteins from raw biomass.
+alkaline hydrogen peroxide-assisted extraction,5,False,False,,,False,,
+alkaline protein isolation,8,False,False,,,False,,
+alkaline solubilization,1,False,False,,,False,,
+aqueous extraction,20,False,False,,,False,,
+arabinofuranosidase-assisted alkaline extraction,7,True,False,extraction_method=5; material_used_directly=2,llm,True,high,The entity describes a process used to isolate proteins from raw biomass.
+cellulase and xylanase cocktail-assisted alkaline extraction,7,True,False,extraction_method=6; material_used_directly=1,llm,True,high,The entity describes a process used to obtain proteins from raw biomass.
+centrifugation conditions,2,False,False,,,False,,
+citric acid precipitation,22,True,False,extraction_method=16; material_used_directly=6,llm,True,high,"The entity 'citric acid precipitation' is consistently described as a method used to isolate proteins, aligning with the definition of an extraction method."
+cold pressing,35,True,False,extraction_method=31; material_used_directly=4,llm,True,high,Cold pressing is consistently described as a method to isolate proteins.
+"combined alkaline extraction, ultrafiltration, diafiltration, and isoelectric precipitation",4,False,False,,,False,,
+combined ultrasound-assisted and high-pressure-assisted extraction,1,False,False,,,False,,
+conventional extraction,1,False,False,,,False,,
+corn germ meal albumin protein extraction,1,False,False,,,False,,
+de-oiling,2,False,False,,,False,,
+defatting and protein isolation,6,False,False,,,False,,
+defatting methods,2,False,False,,,False,,
+defatting solvent extraction,1,False,False,,,False,,
+deoiling,3,False,False,,,False,,
+dialysis,1,False,False,,,False,,
+different defatting strategies,1,False,False,,,False,,
+different solvent extraction methods,1,False,False,,,False,,
+dry fractionation,15,True,False,extraction_method=14; material_used_directly=1,llm,True,high,"'Dry fractionation' is consistently described as a method to obtain proteins, aligning with the definition of an extraction method."
+enzymatic extraction,15,False,False,,,False,,
+ethanol dephenolization,4,False,False,,,False,,
+ethanol extraction,1,False,False,,,False,,
+extraction,2,False,False,,,False,,
+extraction pH,7,False,False,,,False,,
+extraction using high-pressure followed by ultrasound treatment,5,False,False,,,False,,
+fractionation method,1,False,False,,,False,,
+globulin extraction yield,2,False,False,,,False,,
+globulin yield,1,False,False,,,False,,
+hexane defatting,5,False,False,,,False,,
+"hexane defatting, alkaline solubilization, and isoelectric precipitation",1,False,False,,,False,,
+hexane deoiling,1,False,False,,,False,,
+hexane extraction,13,True,True,extraction_method=7; material_used_directly=6,llm,True,high,Hexane extraction is consistently described as a method for obtaining or isolating oil from biomass.
+high-pressure and ultrasound combination treatment,6,False,False,,,False,,
+high-pressure-assisted alkaline extraction,8,False,False,,,False,,
+high-pressure-assisted extraction,23,True,False,extraction_method=21; material_used_directly=2,llm,True,high,The entity 'high-pressure-assisted extraction' is consistently described as a method for obtaining protein from raw biomass.
+high-pressure-assisted extraction followed by ultrasound-assisted extraction,6,True,False,extraction_method=4; material_used_directly=2,llm,True,high,The entity describes a process used to isolate proteins from raw biomass.
+high-temperature oil extraction,3,False,False,,,False,,
+higher-temperature protein isolation,1,False,False,,,False,,
+hot pressing,23,True,True,extraction_method=12; material_used_directly=11,llm,True,high,Hot pressing is consistently described as a method to obtain proteins from raw biomass.
+hydrochloric acid precipitation,30,True,True,material_used_directly=19; extraction_method=11,llm,True,high,The entity 'hydrochloric acid precipitation' is consistently described as a method used to isolate proteins from raw biomass.
+interaction of extraction pH and NaCl concentration,5,False,False,,,False,,
+isoelectric precipitation,37,True,False,extraction_method=29; material_used_directly=8,llm,True,high,Isoelectric precipitation is consistently described as a method to isolate proteins from raw materials.
+isoelectric precipitation with alcohol precipitation,3,False,False,,,False,,
+isolation temperature,4,False,False,,,False,,
+isopropanol extraction,17,False,False,,,False,,
+isopropyl alcohol defatting,3,False,False,,,False,,
+lipid extraction procedure,1,False,False,,,False,,
+low pH extraction,2,False,False,,,False,,
+mechanical pressing,5,True,False,extraction_method=4; material_used_directly=1,llm,True,high,'Mechanical pressing' is consistently described as a method for obtaining protein or oil.
+membrane filtration,10,False,False,,,False,,
+membrane processing,1,False,False,,,False,,
+mildly alkaline protein extraction,1,False,False,,,False,,
+n-hexane defatting,3,False,False,,,False,,
+n-hexane extraction,16,True,False,material_used_directly=14; extraction_method=2,llm,True,high,The entity 'n-hexane extraction' is consistently described as a method used to isolate proteins from raw biomass.
+non-thermal protein extraction techniques,3,False,False,,,False,,
+nonconventional extraction approaches,7,False,False,,,False,,
+oil extraction at high temperature,1,False,False,,,False,,
+organic solvent extraction,3,False,False,,,False,,
+pH adjustment during protein extraction,2,False,False,,,False,,
+pH-shifting protein isolation,25,False,False,,,False,,
+particle size fractionation,9,False,False,,,False,,
+pea albumin incorporation using wet extraction,1,False,False,,,False,,
+potassium hydroxide extraction,5,False,False,,,False,,
+precipitation,3,False,False,,,False,,
+precipitation with hydrochloric acid,1,False,False,,,False,,
+precipitation with kosmotropic acids,1,False,False,,,False,,
+precipitation with the acid used for quinoa protein isolate-C,1,False,False,,,False,,
+pressing and solvent extraction,2,False,False,,,False,,
+protein extraction,13,True,False,physicochemical_property=10; extraction_method=3,llm,True,high,"The entity 'protein extraction' refers to the process of obtaining proteins from raw materials, as evidenced by its use in sentences describing methods and effects on protein properties."
+protein isolation,9,False,False,,,False,,
+protein isolation conditions,18,False,False,,,False,,
+protein isolation yield,1,False,False,,,False,,
+protein precipitation,5,False,False,,,False,,
+removal of starch granules from the protein matrix,1,False,False,,,False,,
+removal of vicilin and small peptides,1,False,False,,,False,,
+resin washing,2,False,False,,,False,,
+resin-assisted purification,8,False,False,,,False,,
+salt extraction,26,False,False,,,False,,
+salt extraction with enhanced solvent extraction,1,False,False,,,False,,
+salt solubilization-dialysis method,2,False,False,,,False,,
+salting-out,1,False,False,,,False,,
+salting-out effect,2,False,False,,,False,,
+solvent extraction,21,True,True,material_used_directly=11; extraction_method=10,llm,True,high,The entity 'solvent extraction' is consistently described as a method used to obtain or isolate proteins from raw biomass.
+stepwise NaCl/potassium hydroxide extraction,1,False,False,,,False,,
+stepwise water/potassium hydroxide extraction,1,False,False,,,False,,
+strong acid and alkali extraction,2,False,False,,,False,,
+subcritical butane defatting,3,False,False,,,False,,
+subcritical butane extraction,17,False,False,,,False,,
+suspension in water,2,False,False,,,False,,
+temperature-controlled protein isolation,1,False,False,,,False,,
+temperature-controlled protein solubilization,2,False,False,,,False,,
+two-stage protein isolation process,4,False,False,,,False,,
+ultrafiltration,36,False,False,,,False,,
+ultrasonic and alkaline solution extraction,1,False,False,,,False,,
+ultrasonic-assisted extraction,24,False,False,,,False,,
+ultrasound extraction,10,False,False,,,False,,
+ultrasound treatment during alkaline solubilization,1,False,False,,,False,,
+ultrasound-assisted alkali extraction,12,False,False,,,False,,
+ultrasound-assisted enzymatic extraction,10,False,False,,,False,,
+ultrasound-assisted extraction,62,True,False,extraction_method=60; material_used_directly=2,llm,True,high,"The entity 'ultrasound-assisted extraction' is consistently described as a method for obtaining or isolating proteins, with evidence highlighting its efficiency and impact on protein yield."
+ultrasound-assisted extraction followed by high-pressure-assisted extraction,5,True,True,extraction_method=3; material_used_directly=2,llm,True,high,The entity describes a process used to isolate proteins from raw biomass.
+water extraction,8,False,False,,,False,,
+wet extraction,2,False,False,,,False,,
+wet fractionation,19,True,True,material_used_directly=10; extraction_method=9,llm,True,high,"'Wet fractionation' is consistently described as a method to obtain proteins, aligning with 'extraction_method.'"
+wet milling,2,False,False,,,False,,

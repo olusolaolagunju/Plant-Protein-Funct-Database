@@ -1,0 +1,58 @@
+ACYLATION
+
+Let’s lock this down cleanly, Olusola — why converting an amino group (–NH₂) into an amide (–NH–CO–R) creates a covalent bond, and between which components.
+No fluff. Just the chemistry.
+🔬 1. What is happening chemically during acylation?
+Acetic anhydride and succinic anhydride are acylating agents. They contain a reactive carbonyl group (C=O) that is electrophilic.
+Proteins contain nucleophilic amino groups, mainly:
+•	ε amino group of lysine
+•	α amino group at the N terminus
+•	occasionally histidine or cysteine
+These amino groups attack the electrophilic carbonyl.
+This is a nucleophilic acyl substitution reaction.
+🧪 2. Step by step chemistry (the covalent bond formation)
+Step 1 — Nucleophilic attack
+Protein–NH₂ attacks the carbonyl carbon of the anhydride:
+Code
+Protein–NH₂  → attacks →  O=C–O–C=O (anhydride)
+This forms a tetrahedral intermediate.
+Step 2 — Collapse of intermediate
+One half of the anhydride leaves as a carboxylate (acetate or succinate).
+Step 3 — Formation of the amide bond
+The protein now carries:
+Code
+Protein–NH–CO–R
+This NH–CO linkage is a covalent amide bond.
+It is stable, irreversible under food conditions, and permanently modifies the protein.
+✔ 3. What components are now covalently linked?
+Acetic anhydride → acetylated protein
+Protein–NH–CO–CH₃ (covalent bond between protein amino group and acetyl group)
+Succinic anhydride → succinylated protein
+Protein–NH–CO–(CH₂)₂–COOH (covalent bond between protein amino group and succinyl group)
+So the covalent bond is:
+Protein nitrogen (N) — carbonyl carbon (C) of the acyl group
+This is the classic amide bond.
+🌱 4. Why converting amino → amide = covalent bond?
+Because:
+•	The amino group loses its hydrogen
+•	The acyl group attaches directly to the nitrogen
+•	The carbonyl carbon and nitrogen form a new sigma bond
+•	This bond is part of an amide functional group, which is covalent and stable
+This is the same type of bond that forms the protein backbone (peptide bonds). So acylation literally adds a new peptide like bond to the protein side chain.
+🔍 5. Why this is different from non covalent complexes
+Polysaccharides like guar gum, xanthan, KC, GG:
+•	do not have reactive carbonyl groups
+•	cannot undergo nucleophilic acyl substitution
+•	cannot form amide bonds
+•	only form physical complexes (hydration, viscosity, network structuring)
+But acetic anhydride and succinic anhydride:
+•	are true chemical reagents
+•	always produce covalent amide bonds
+•	permanently modify protein structure
+✔ Final clarity (manuscript ready)
+Acylation converts a protein amino group (–NH₂) into an amide (–NH–CO–R) through nucleophilic acyl substitution. The nitrogen of the protein forms a covalent bond with the carbonyl carbon of the acyl group, producing a stable amide linkage. Acetic anhydride yields acetylated proteins, and succinic anhydride yields succinylated proteins. This reaction is irreversible under food processing conditions and always results in covalent modification of the protein isolate.
+If you want, I can also produce:
+•	a schematic reaction diagram
+•	a comparison table: acylation vs. Maillard vs. polysaccharide complexation
+•	a manuscript ready subsection explaining acylation chemistry in food proteins
+

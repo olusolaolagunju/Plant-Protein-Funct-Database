@@ -1,0 +1,129 @@
+oxidation
+OIL RIG → Oxidation Is Loss, Reduction Is Gain (of electrons)
+
+13‑HPODE is a lipid hydroperoxide, and hydroperoxides are strong oxidizing agents.
+When rice protein is incubated with 13‑HPODE,  the following happens
+1. Carbonylation
+Amino acids lose electrons → they get converted into carbonyl groups.
+
+2. Loss of sulfhydryl groups (–SH)
+Cysteine residues get oxidized → electrons are removed →
+two cysteines form disulfide bonds.
+
+3. Protein aggregation
+Disulfide bonds + hydrophobic interactions → proteins stick together.
+
+4. Secondary structure changes
+Oxidation pushes the protein toward more rigid beta‑sheet structures.
+
+***********************************************************************************************************************************************************
+Here’s a **simple, clear explanation** of the oxidation reaction described in your abstract and the **purpose of using 13‑HPODE** in the experiment. No jargon, no unnecessary detail — just the core ideas.
+
+---
+
+## **1. What oxidation reaction is happening? (Simplified)**
+
+During rice ageing, the fats in rice undergo **lipid oxidation**. One of the main oxidation products formed is **13‑HPODE**, a lipid hydroperoxide.
+
+When rice protein is incubated with 13‑HPODE, it triggers **protein oxidation**, which mainly causes:
+
+### **a. Protein carbonylation**
+- 13‑HPODE reacts with amino acids in rice protein  
+- This adds **carbonyl groups** (oxidation markers) to the protein  
+- Carbonylation usually means the protein is damaged or structurally altered
+
+Amino acids that form carbonyls upon oxidation:
+Lysine → aminoadipic semialdehyde
+
+Arginine → glutamic semialdehyde
+
+Proline → glutamic semialdehyde
+
+Threonine → amino ketone derivatives
+*******************************************************************************************************************************************************88
+2. Secondary carbonylation via lipid oxidation products (like 13‑HPODE)
+This is the pathway relevant to your example:
+
+13‑HPODE reacts with amino acids in rice protein → carbonyl groups appear
+### **b. Loss of sulfhydryl (–SH) groups**
+- 13‑HPODE oxidizes cysteine residues  
+- –SH groups disappear because they form **disulfide bonds**  
+- This leads to **protein crosslinking** and formation of aggregates
+Lipid‑derived protein carbonylation requires the presence of lipids.
+If you have a pure protein isolate with no lipids, this specific pathway cannot occur.
+
+8*************************************************************************************************************************************************8
+But protein carbonylation can still occur WITHOUT lipids
+Proteins can form carbonyls through other pathways, even in pure isolates:
+1. Direct oxidation of amino acids (no lipid needed)
+ROS can oxidize:
+•	lysine → aminoadipic semialdehyde
+•	arginine → glutamic semialdehyde
+•	proline → glutamic semialdehyde
+•	threonine → amino ketone derivatives
+This produces intrinsic protein carbonyls.
+
+**************************************************************************************************************************************************************8
+
+### **c. Changes in secondary structure**
+Oxidation shifts the protein from flexible structures to more rigid ones:
+
+- ↓ alpha‑helix  
+- ↓ beta‑turn  
+- ↓ random coil  
+- ↑ beta‑sheet  
+
+This is typical of oxidized proteins becoming more **ordered, rigid, and aggregated**.
+
+### **d. Formation of soluble aggregates**
+- Oxidation promotes protein–protein interactions  
+- Aggregates form through disulfide bonds and hydrophobic interactions
+
+---
+
+## **2. Why did the researchers use 13‑HPODE? (The aim)**
+
+The goal was to **simulate the natural oxidation that happens during rice ageing** and see **how lipid oxidation products affect rice protein functionality**.
+
+### **In simple terms:**
+They used 13‑HPODE to **mimic real-life oxidative stress** and study how rice protein changes when exposed to lipid oxidation products.
+
+### **More specifically, they wanted to understand:**
+
+- **How oxidation alters rice protein structure**  
+  (carbonylation, loss of –SH groups, secondary structure changes, aggregation)
+
+- **How these structural changes affect functional properties**  
+  (solubility, WHC, OHC, foaming, emulsifying ability)
+
+- **Whether mild oxidation can improve emulsification**  
+  (it did — at low 13‑HPODE levels)
+
+- **Whether severe oxidation damages functionality**  
+  (it did — at high 13‑HPODE levels)
+
+### **Why this matters:**
+Rice protein functionality changes during storage and processing.  
+Understanding oxidation helps:
+
+- improve rice protein quality  
+- control ageing effects  
+- optimize rice‑based food formulations  
+- predict shelf‑life behavior  
+
+---
+
+## **3. Ultra‑short summary**
+
+- **13‑HPODE oxidizes rice protein**, causing carbonylation, loss of –SH groups, more beta‑sheet structure, and protein aggregation.  
+- **Low levels** improve emulsification; **high levels** damage most functional properties.  
+- The **aim** was to model rice ageing and understand how lipid oxidation affects rice protein structure and functionality.
+
+---
+
+If you want, I can also turn this into:
+
+- a **one‑sentence summary**,  
+- a **figure caption**,  
+- a **schematic explanation** (e.g., “lipid oxidation → protein oxidation → functional changes”),  
+- or a **table row** matching your previous entries.

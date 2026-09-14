@@ -1,0 +1,60 @@
+# This repo only tracks the two project folders below.
+# Everything else in this Data-Minning directory (other unrelated projects,
+# loose working files) is intentionally excluded.
+/*
+!/Web-of-science-abstracts/
+!/NER-PROJECT/
+!/README.md
+!/.gitignore
+!/LICENSE
+
+# ── Secrets — never commit ──────────────────────────────────────────────
+.env
+*.env
+**/neo4j-password.txt
+**/Neo4j-*-Created-*.txt
+**/*.pem
+**/*.key
+
+# ── Search-strategy notes (kept private per project owner) ─────────────
+Web-of-science-abstracts/12k-dataset/Web of science search clarivate.txt
+
+# ── Python environments / caches ────────────────────────────────────────
+**/.venv/
+**/__pycache__/
+**/*.pyc
+
+# ── Bundled/generated Neo4j Desktop app data (not source, very large) ──
+NER-PROJECT/PART-7-NEO4J-KG/distributions/
+NER-PROJECT/PART-7-NEO4J-KG/graphApps/
+NER-PROJECT/PART-7-NEO4J-KG/relate-data/
+NER-PROJECT/PART-7-NEO4J-KG/projects/
+NER-PROJECT/PART-7-NEO4J-KG/release-notes-cache/
+
+# ── Raw downloaded article content (licensing/size — not redistributable) ─
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/PDF_files/
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/PDF_files2/
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/Elsevier_FIG_files/
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/Elsevier_TXT_files/
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/wiley_downloads/
+
+# ── Raw literature-database export dumps (large, not source) ───────────
+Web-of-science-abstracts/12k-dataset/ALL-DATASET/
+Web-of-science-abstracts/12k-dataset/SCOPUS/
+Web-of-science-abstracts/12k-dataset/WOS/
+Web-of-science-abstracts/12k-dataset/EBSCOHOST/
+
+# ── Bulk extracted/chunked full article text (copyrighted source content,
+#    not the project's own work — only short quoted excerpts in the
+#    downstream triple tables are kept) ──────────────────────────────────
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/IRRELEVANT-FILES/
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/PDF_extracted_txt/
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/chunks_all.parquet
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/chunks_elsevier.parquet
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/chunks_pdf.parquet
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/chunks_PDF_preview.txt
+NER-PROJECT/PART-1-PDF_PREPROCESSING_INTO_CHUNKS/chunks_elsevier_preview.txt
+
+# ── Unrelated files that appear to have been placed here by mistake ────
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/doi_files/NoP5-Repvit.yaml
+NER-PROJECT/PART-0-DOWNLOAD ARTICLES/doi_files/NoP5-Shufflenet.yaml

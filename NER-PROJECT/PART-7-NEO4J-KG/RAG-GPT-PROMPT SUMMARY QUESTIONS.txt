@@ -1,0 +1,5 @@
+PROMPT SUMMARY QUESTIONS less than 1000 words
+1. Compare major plant proteins with soy protein sin terms of functionality
+2. compare and contrast the effect of major protein extraction methods on plant protein functionalities and applications
+3. compare and contrast the effect of major protein modification methods on plant protein functionalities and applications
+4. Identify real gaps across modification treatments 
