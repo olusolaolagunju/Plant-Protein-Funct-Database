@@ -1,7 +1,0 @@
-Acylation
-
-Acylation is the broad chemical reaction category: it means attaching an acyl group (R-CO-) to a molecule, in this case, to the amine groups on a protein (typically lysine residues). Acetylation and succinylation are two specific, named types of acylation, distinguished by which acyl group is being attached:
-
-Acetylation = attaching an acetyl group, typically using acetic anhydride as the reagent
-Succinylation = attaching a succinyl group, typically using succinic anhydride as the reagent
-Other acylation variants exist too, using different reagents, like lauroylation (using lauroyl chloride, attaching a longer fatty acyl chain, which also changes the protein's hydrophobicity more than the shorter acetyl/succinyl groups do)
